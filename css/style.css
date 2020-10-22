@@ -1,0 +1,21 @@
+/* Journey to the Center of the of the Earth Practicum */
+/* Karen Stagg */
+
+body {
+    box-sizing: border-box;
+}
+
+header, nav, main, aside, footer {
+    margin: .2em .2em;
+    padding: 1.5em;
+    border: .3em solid #886644;
+    box-shadow: inset 15px 12px 8px  grey;
+}
+
+header {
+    border-radius:  1em 1em 0em 0em ;
+}
+
+footer {
+    border-radius:  0em 0em 1em 1em;
+}
