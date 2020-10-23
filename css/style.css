@@ -1,0 +1,136 @@
+/* Journey to the Center of the of the Earth Practicum */
+/* Karen Stagg */
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #765729, black);
+
+}
+
+header, nav, main, aside, footer {
+    margin: .2em .2em;
+    padding: 1em;
+    border: .3em solid #886644;
+    box-shadow: inset 8px 8px 5px  grey;
+    background: white;
+    opacity: 75%;
+}
+
+header {
+    border-radius:  1em 1em 0em 0em ;
+    background-image: url(../img/cave.jpg);
+    box-shadow: inset 30px 24px 16px black;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+    text-align: center;
+    line-height: 4em;
+}
+
+footer {
+    border-radius:  0em 0em 1em 1em;
+}
+
+:lang(fr), :lang(is), :lang(it) {
+    font-style: italic;
+}
+
+.character {
+    font-weight: bold;
+}
+
+h2 {
+    border-bottom: 1px dashed black;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    }
+
+a:hover {
+    text-decoration: underline;
+    color: #765729;
+}
+
+nav ul  {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+   
+    justify-content: center;
+    padding: 0em .5em;
+    border-left: 3px double black;
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+
+main #cover {
+    float: left;
+    width: 8em;
+    padding: 0em 1em 1em 0em;
+}
+
+main :nth-child(3):first-line {
+    clear: both;
+    font-size: 1.2em;
+}
+
+main ul {
+    text-align: left;
+}
+
+main #cryptogram {
+    display: grid;
+}
+
+main #cryptogram img {
+    max-width: 50%;
+    justify-self: center;
+}
+
+main #cryptogram figcaption {
+    text-align: center;
+    font-style: italic;
+}
+ 
+aside div.submission {
+    padding: .5em .2em;
+}
+
+aside div.opinion {
+    text-align: center;
+    padding: .5em .5em;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+aside div.signature {
+    text-align: right;
+    padding: 0em .5em .5em;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+footer {
+    text-align: center;
+}
+
+
