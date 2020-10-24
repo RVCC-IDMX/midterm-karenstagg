@@ -1,12 +1,13 @@
 /* Journey to the Center of the of the Earth Practicum */
 /* Karen Stagg */
 
+/* Body Section */
 body {
     box-sizing: border-box;
     background: linear-gradient(to bottom, #765729, black);
-
 }
 
+/* Main Structural Elements - general Formatting */
 header, nav, main, aside, footer {
     margin: .2em .2em;
     padding: 1em;
@@ -16,6 +17,8 @@ header, nav, main, aside, footer {
     opacity: 75%;
 }
 
+/* Header Section - OUR HERO */
+/* Give header cave background, rounded corners, extra shadowing */
 header {
     border-radius:  1em 1em 0em 0em ;
     background-image: url(../img/cave.jpg);
@@ -24,30 +27,34 @@ header {
 
 h1 {
     font-family: Georgia;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     color: white;
     text-shadow: 3px 3px 10px black;
     text-align: center;
-    line-height: 4em;
+    height: 3em;
+    padding-top: .2em;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-footer {
-    border-radius:  0em 0em 1em 1em;
-}
-
+/* Non-English Formatting Section */
 :lang(fr), :lang(is), :lang(it) {
     font-style: italic;
 }
 
+/* Character Names Formatting Section */
 .character {
     font-weight: bold;
 }
 
+/* Underlining h2 parent th dashed line to end */
 h2 {
     border-bottom: 1px dashed black;
 }
 
+/* Links Section */
+/* Change appearance of links: nav and footer*/
 a {
     color: black;
 }
@@ -61,76 +68,84 @@ a:hover {
     color: #765729;
 }
 
+/* Navigation Section */
+/* format page navigation  */
 nav ul  {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 0 1 auto;
     justify-content: center;
+    
 }
 nav ul li {
-   
-    justify-content: center;
-    padding: 0em .5em;
-    border-left: 3px double black;
+    padding: 0em 8px;
+    border-right: 3px double black;
 }
 
-nav ul li:first-child {
-    border-left: none;
+nav ul li:last-child {
+    border-right: none;
 }
 
+/* Main Section */
+/* float book image and make first line larger text */
 main #cover {
     float: left;
-    width: 8em;
+    width: 12em;
     padding: 0em 1em 1em 0em;
 }
 
 main :nth-child(3):first-line {
+    /* remember to clear float */
     clear: both;
     font-size: 1.2em;
 }
 
 main ul {
     text-align: left;
+    padding-left: 2em;
 }
 
-main #cryptogram {
-    display: grid;
-}
-
+/* Make cryptogram image flex */
 main #cryptogram img {
-    max-width: 50%;
-    justify-self: center;
+    display: flex;
+    max-width: 100%;
 }
 
 main #cryptogram figcaption {
-    text-align: center;
+    justify-self: center;
     font-style: italic;
 }
  
-aside div.submission {
-    padding: .5em .2em;
+/* Aside Section */
+/* Keep at bottom of page  */
+aside .submission {
+    border: 1px solid black;
+    /* Creating gap in borders */
+    margin-bottom: 10px;
+    padding-left: .5em;
+    padding-right: .5em;
+    /* Differentiate background color */
+    background-color: whitesmoke;
+    opacity: 75%;
 }
 
-aside div.opinion {
+aside .opinion {
     text-align: center;
-    padding: .5em .5em;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-
+    padding: .5em;
 }
 
-aside div.signature {
+aside .signature {
     text-align: right;
-    padding: 0em .5em .5em;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    font-style: italic;
+    padding-right: 7px;
 }
 
+/* Footer Section */
 footer {
+    border-radius:  0em 0em 1em 1em;
     text-align: center;
+    font-weight: bold;
 }
-
 
