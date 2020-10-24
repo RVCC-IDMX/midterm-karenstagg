@@ -1,8 +1,6 @@
 /* Journey to the Center of the of the Earth Practicum */
 /* Karen Stagg */
-* {
-    outline: 1px solid red;
-}
+
 /* Body Section */
 body {
     box-sizing: border-box;
@@ -117,12 +115,14 @@ main #cryptogram {
 
 main #cryptogram img {
     max-width: 100%;
+    width: 400px;
     justify-self: center;
 }
 
 main #cryptogram figcaption {
     justify-self: center;
     font-style: italic;
+    padding-top: 5px;
 }
  
 /* Aside Section */
